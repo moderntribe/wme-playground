@@ -1,5 +1,5 @@
 import './App.css';
-import { Button, Checkbox } from '@moderntribe/wme';
+import { MyButton, MyDropdown, MySplitButton } from './components';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div className="components-list">
         <ul>
           <li><a href="#button">Button</a></li>
-          <li></li>
+          <li><a href="#split-button">Split Button</a></li>
           <li></li>
           <li></li>
           <li></li>
@@ -18,22 +18,18 @@ function App() {
       <div className="components">
         <div id="button">
           <h3>Button</h3>
-          <Button
-            variant="contained"
-            color="primary"
-          >
-            Button Text
-          </Button>
+          <MyButton />
         </div>
-        <div id="checkbox">
-          <h3>Checkbox</h3>
-          <Checkbox
-            label="this is a checkbox"
-          >
-            Button Text
-          </Checkbox>
+        <div id="split-button">
+          <h3>Split Button</h3>
+          <MySplitButton />
         </div>
+        <div id="dropdown">
+          <h3>Dropdown</h3>
+          <MyDropdown />
       </div>
+      </div>
+      
     </div>
   );
 }

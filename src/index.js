@@ -5,13 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { WMEProvider } from '@moderntribe/wme';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <WMEProvider>
-      <App />
-    </WMEProvider>
+    <WMEProvider><App /></WMEProvider>
   </React.StrictMode>
 );
 
