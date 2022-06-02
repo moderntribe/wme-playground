@@ -2,6 +2,7 @@
 import React, { FunctionComponent } from "react";
 
 import Home from "./pages/home";
+import Forms from "./pages/forms";
 
 interface Route {
     key: string,
@@ -18,5 +19,12 @@ export const routes: Array<Route> = [
         path: '/',
         enabled: true,
         component: Home
+    },
+    {
+        key: 'forms-route',
+        title: 'Forms',
+        path: '/forms',
+        enabled: true,
+        component: Forms
     }
 ]
